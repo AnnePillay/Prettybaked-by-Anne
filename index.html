@@ -1,117 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrettyBaked by Anne</title>
-  <style>
-    /* Applying gradient background and sprinkles pattern */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #6a1b9a, #3f51b5); /* Purple to Blue Gradient */
-      background-image: url('sprinkles.png'); /* Add your sprinkles image path here */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: white;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrettyBaked by Anne</title>
+    <style>
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
 
-    header {
-      padding: 50px 20px;
-      text-align: center;
-      color: white;
-      background-color: #FF69B4; /* HotPink background */
-    }
+        /* Apply a pink sprinkles background image */
+        body {
+            background-image: url('sprinkles.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      font-weight: bold;
-    }
+        /* Add purple and blue gradient background */
+        .main-content {
+            background: linear-gradient(to bottom, #8a2be2, #4b0082);
+            padding: 50px 0;
+            border-radius: 20px;
+            margin: 20px;
+        }
 
-    .intro {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-      border-radius: 10px;
-      margin: 20px;
-    }
+        h1 {
+            color: pink;
+            font-size: 3em;
+        }
 
-    .intro h2 {
-      font-size: 28px;
-      color: #333;
-    }
+        h2 {
+            font-size: 2em;
+            color: pink;
+        }
 
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      padding: 40px 20px;
-      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for gallery */
-      border-radius: 10px;
-    }
+        p {
+            font-size: 1.2em;
+        }
 
-    .gallery img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            margin: 15px;
+            border-radius: 10px;
+        }
 
-    .contact {
-      padding: 40px 20px;
-      background-color: #FF69B4;
-      color: white;
-      text-align: center;
-    }
+        /* Style for contact section */
+        .contact a {
+            color: lightblue;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
 
-    .contact h3 {
-      margin: 0 0 20px;
-    }
-
-    .contact p {
-      margin: 10px 0;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+        .contact a:hover {
+            color: lightpink;
+        }
+    </style>
 </head>
 <body>
+    <div class="main-content">
+        <h1>PrettyBaked by Anne</h1>
+        <h2>About</h2>
+        <p>Welcome to PrettyBaked by Anne! We specialize in beautifully crafted cakes, cupcakes, and baked treats for all occasions.</p>
 
-  <header>
-    <h1>PrettyBaked by Anne</h1>
-  </header>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="cake1.jpg" alt="Custom Cake 1">
+            <img src="cake2.jpg" alt="Custom Cake 2">
+            <img src="cake3.jpg" alt="Custom Cake 3">
+        </div>
 
-  <div class="intro">
-    <h2>Welcome to PrettyBaked by Anne!</h2>
-    <p>We specialize in beautifully crafted cakes, cupcakes, and baked treats for all occasions. Let us make your special day even more memorable with custom creations!</p>
-  </div>
+        <h2>Contact Us</h2>
+        <p>Email: prettybaked@example.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/prettybakebyanne" target="_blank">@prettybakebyanne</a></p>
 
-  <div class="gallery">
-    <img src="cake1.jpg" alt="Custom Cake 1">
-    <img src="cake2.jpg" alt="Custom Cake 2">
-    <img src="cake3.jpg" alt="Custom Cake 3">
-  </div>
-
-  <div class="contact">
-    <h3>Contact Us</h3>
-    <p>Email: prettybaked@example.com</p>
-    <p>Instagram: <a href="https://www.instagram.com/prettybakebyanne" target="_blank">@prettybakebyanne</a></p>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 PrettyBaked by Anne. All Rights Reserved.</p>
-  </footer>
-
+        <footer>
+            <p>&copy; 2025 PrettyBaked by Anne. All Rights Reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
