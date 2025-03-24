@@ -1,47 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrettyBaked by Anne</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        nav { background: #f8b400; padding: 10px; }
-        nav a { margin: 0 15px; text-decoration: none; color: #fff; font-weight: bold; }
-        .gallery img { width: 200px; height: auto; margin: 10px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrettyBaked by Anne</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #FF69B4; /* HotPink background */
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .intro {
+      padding: 40px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 28px;
+      color: #333;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact {
+      padding: 40px 20px;
+      background-color: #FF69B4;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin: 0 0 20px;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
+  <header>
     <h1>PrettyBaked by Anne</h1>
+  </header>
 
-    <section id="about">
-        <h2>About PrettyBaked</h2>
-        <p>Welcome to PrettyBaked by Anne! We specialize in beautifully crafted cakes, cupcakes, and baked treats for all occasions.</p>
-    </section>
+  <div class="intro">
+    <h2>Welcome to PrettyBaked by Anne!</h2>
+    <p>We specialize in beautifully crafted cakes, cupcakes, and baked treats for all occasions. Let us make your special day even more memorable with custom creations!</p>
+  </div>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="cake1.jpg" alt="Custom Cake 1">
-            <img src="cake2.jpg" alt="Custom Cake 2">
-            <img src="cake3.jpg" alt="Custom Cake 3">
-        </div>
-    </section>
+  <div class="gallery">
+    <img src="cake1.jpg" alt="Custom Cake 1">
+    <img src="cake2.jpg" alt="Custom Cake 2">
+    <img src="cake3.jpg" alt="Custom Cake 3">
+  </div>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: prettybaked@example.com</p>
-        <p>Instagram: <a href="https://www.instagram.com/prettybakebyanne" target="_blank">@prettybakebyanne</a></p>
-    </section>
+  <div class="contact">
+    <h3>Contact Us</h3>
+    <p>Email: prettybaked@example.com</p>
+    <p>Instagram: @prettybakebyanne</p>
+  </div>
 
-    <footer>
-        <p>© 2025 PrettyBaked by Anne. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 PrettyBaked by Anne. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
